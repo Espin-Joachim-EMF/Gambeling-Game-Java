@@ -2,25 +2,16 @@ package Roulette.Modele;
 
 public class Joueur {
 
-    public String prenom;
-    public int argent;
-    public int mise;
+    private final String prenom;
+    private int argent;
 
     public Joueur(String prenom, int argent) {
         this.prenom = prenom;
         this.argent = argent;
-        mise = 0;
-    }
-    public void miser(int mise) {
-        this.mise = mise;
     }
 
-    public void gagner() {
-        argent += mise;
-    }
-
-    public void perdre() {
-        argent -= mise;
+    public void setArgent(int argent) {
+        this.argent = argent;
     }
 
     public int getArgent() {

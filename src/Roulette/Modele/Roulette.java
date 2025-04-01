@@ -7,10 +7,7 @@ public class Roulette {
     private static final int[] rouges = {1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36};
     private static final int[] noirs = {2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35};
 
-
-    public Roulette() {
-
-    }
+    public Roulette() {}
 
     public int tourneRoulette() {
         int chiffre = (int) (Math.random() * (MAX - MIN + 1)) + MIN;
@@ -38,7 +35,7 @@ public class Roulette {
         return "Inconnu";
     }
 
-    public void afficherToutesLesCouleurs() {
+    public void afficherToutesLesCouleursEtNombre() {
         System.out.print("Numéros Rouges : ");
         for (int i = 0; i < rouges.length; i++) {
             System.out.print(rouges[i] + (i < rouges.length - 1 ? ", " : ""));
@@ -55,7 +52,7 @@ public class Roulette {
     }
 
     public Roulette getRoulette() {
-        return getRoulette();
+        return this;
     }
 
 }
